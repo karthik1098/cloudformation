@@ -1,0 +1,8 @@
+"MySubscription" : {
+  "Type" : "AWS::SNS::Subscription",
+  "Properties" : {
+    "Endpoint" : "test@example.com",
+    "Protocol" : "email",
+    "TopicArn" : { "Ref" : "MySNSTopic" }
+  }
+}
