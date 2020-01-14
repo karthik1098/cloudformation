@@ -5,10 +5,10 @@ Resources:
     Type: AWS::Lambda::Function
     Properties: 
       Handler: index.handler
-      Role: arn:aws:iam::271736097527:role/lambdaexecutionrole
+      Role: arn:aws:iam::lidwouwOEHwohWOCF27:role/lambdaexecutionrole
       Code: 
-        S3Bucket: lambda-functions101
-        S3Key: lambda_function.zip
+        S3Bucket: XXXXXXXXXXXXXXXXX
+        S3Key: XXXXXXXXXXXX.zip
       Runtime: nodejs12.x
       Timeout: 5
       TracingConfig:
