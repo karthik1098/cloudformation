@@ -1,0 +1,22 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "myDBSubnetGroup": {
+            "Type": "AWS::RDS::DBSubnetGroup",
+            "Properties": {
+                "DBSubnetGroupDescription": "description",
+		"DBSubnetGroupName": "KarthikDemo",
+                "SubnetIds": [
+                    "subnet-5f2ee951",
+                    "subnet-67121f00"
+                ],
+                "Tags": [
+                    {
+                        "Key": "String",
+                        "Value": "String"
+                    }
+                ]
+            }
+        }
+    }
+}
