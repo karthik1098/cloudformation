@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: lambda function.
+Resources:
+  Function: 
+    Type: AWS::Lambda::Function
+    Properties: 
+      Handler: index.handler
+      Role: arn:aws:iam::271736097527:role/lambdaexecutionrole
+      Code: 
+        S3Bucket: lambda-functions101
+        S3Key: lambda_function.zip
+      Runtime: nodejs12.x
+      Timeout: 5
+      TracingConfig:
+        Mode: Active
